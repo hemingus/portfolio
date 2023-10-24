@@ -3,7 +3,7 @@ import "./ImageGallery.css"
 
 const path : string = "./src/assets/images/magic_pyramid/"
 
-const items = [
+const items: {text: string, image: string}[] = [
     {
         "text": "first",
         "image": "magicpyramid_1.png"
