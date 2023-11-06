@@ -1,6 +1,6 @@
 #root {
   width: 100svw;
-  height: 100svh;
+  min-height: 100svh;
   text-align: center;
   background-color: black;
   color: white;
@@ -40,4 +40,15 @@
 
 .read-the-docs {
   color: #00a2ff;
+}
+
+.App-container {
+  display: grid;
+  grid: column;
+  justify-content: center;
+  flex: wrap;
+}
+
+.App-container p {
+  font-size: 30px;
 }
