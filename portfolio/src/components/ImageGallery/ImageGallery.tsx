@@ -1,47 +1,88 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
 import "./ImageGallery.css"
 
 const path : string = "./src/assets/images/magic_pyramid/"
 
-const items: {text: string, image: string}[] = [
+const data: {id: number, class: string, text: string, image: string}[] = [
     {
-        "text": "first",
-        "image": "magicpyramid_1.png"
+        "id": 0,
+        "class": "image-gallery-item",
+        "text": "Musician",
+        "image": "kulturskulebandet.webp"
+    },
+    {   
+        "id": 1,
+        "class": "image-gallery-item",
+        "text": "Aqua Culture",
+        "image": "smoltanlegg.png"
     },
     {
-        "text": "second",
-        "image": "magicpyramid_2.png"
+        "id": 2,
+        "class": "image-gallery-item",
+        "text": "CV",
+        "image": "CVeng_Heming Hanevik.png"
     },
     {
-        "text": "third",
-        "image": "magicpyramid_3.png"
+        "id": 3,
+        "class": "image-gallery-item",
+        "text": "Tetris",
+        "image": "tetris_image1.png"
     },
     {
-        "text": "fourth",
-        "image": "magicpyramid_4.png"
-    },
-    {
-        "text": "fifth",
-        "image": "magicpyramid_5.png"
+        "id": 4,
+        "class": "image-gallery-item",
+        "text": "Tetris",
+        "image": "tetris_image2.png"
     }
 ]
 
-function loadImages() : JSX.Element {
+const videoPath = "./src/assets/videos/INF101 Tetris.mp4"
 
-    return (
-        <ul className="image-gallery-container">
-            {items.map((items)=>(
-            <li>
-                <p>{items.text}</p>
-                <img className="magic-pyramid" src={path + items.image} alt="magicpyramid" />
-            </li>))}
+const ImageGallery: React.FC = () => {
+    const [items, setItems] = useState(data)
+    const [itemSelected, setItemSelected] = useState(false)
+    const [selectedItem, setSelectedItem] = useState({"id": 0, "class": "", "text": "", "image": ""})
+    
 
-        </ul>
-    )
+    
+    function loadImages() : JSX.Element {
+        if (!itemSelected) {
+            return (
+                <div className="image-gallery-container">
+                    <ul>
+                        {items.map((item)=>(
+                            <li className="image-gallery-item" onClick={() => {setSelectedItem(item); setItemSelected(true)}}>
+                                <h2>{item.text}</h2>
+                                <img src={path + item.image} alt="magicpyramid" />
+                            </li>))}
+                    </ul>
+                </div>
 
-}
+            )
+        } else {
+            return (
+                <div className="image-gallery-container">
+                    <div className="image-gallery-centerpiece" onClick={() => {setItemSelected(false)}}>
+                        <h2>{selectedItem.text}</h2>
+                        <img src={path + selectedItem.image} alt="magicpyramid" />
+                        <p>Om meg:
+                        Jeg er Heming, en aspirerende front-end / full-stack utvikler.
+                        Med lang bakgrunn som musiker har jeg , har jeg funnet en ny lidenskap i programmering.
+                        Drives av å se nyttige, flotte eller gøyale applikasjoner kommer til live gjennom kode.
+                        Jeg har nylig fullført en bachelorgrad i datateknologi ved Universitetet i Bergen.
+                        Det har gitt meg et solid fundament for å videreutvikle meg innen programmering.
+                        </p>
+                        {/* <video controls width="640" height="360" loop poster={path + selectedItem.image}>
+                            <source src={videoPath} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video> */}
+                    </div>
+                </div>
+            )
+        }
+    }
 
-const ImageGallery = () => {
     return (
         <div>
             {loadImages()}
