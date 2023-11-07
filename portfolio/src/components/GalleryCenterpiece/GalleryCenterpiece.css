@@ -1,0 +1,45 @@
+.GalleryCenterpieceBackground {
+    width: 100svw;
+    background: url("../../assets/images/blue_tech.png");
+}
+
+.GalleryCenterpiece {
+    width: min(700px, 100svw);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: black;
+    /* background: url("../../assets/images/blue_tech.png"); */
+    justify-content: center;
+}
+
+.GalleryCenterpiece img {
+    width: min(600px, 80%);
+    height: auto;
+    justify-self: center;
+}
+
+.GalleryCenterpiece p {
+    font-size: 20px;
+    text-align: left;
+    width: min(600px, 80%);
+    display: block;
+    background: linear-gradient(black -50%, rgb(0, 42, 77) 50%, black 150%);
+    padding: 20px;
+    justify-self: center;
+    margin: auto;
+}
+
+.GalleryCenterpiece h2 {
+    padding-top: 30px;
+    font-size: max(30px, 10vh);
+}
+
+.GalleryCenterpiece h3 {
+    font-size: 12px;
+    position: fixed;
+    top: 10px; 
+    color: blue;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
