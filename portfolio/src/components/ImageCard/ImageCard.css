@@ -1,0 +1,32 @@
+.ImageCard {
+    align-self: center;
+    position: relative;
+    background-color: rgb(37, 37, 46);
+    height: auto;
+    width: 200px;
+    box-shadow: 0 0 40px rgb(0, 60, 255);
+    transition: transform 0.3s ease;
+    transform: perspective(1000px) rotateX(30deg) rotateY(30deg);
+}
+
+.ImageCard:hover {
+    cursor: pointer;
+    background-color: rgb(37, 37, 46);
+    height: auto;
+    width: 200px;
+    box-shadow: 0 0 80px rgb(5, 238, 129);
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(150%);
+    z-index: 1;
+}
+
+.ImageCard h2 {
+    display: block;
+    background-color: grey;
+    text-align: center;
+}
+
+.ImageCard img {
+    object-fit: cover;
+    height: auto;
+    width: 200px;
+}

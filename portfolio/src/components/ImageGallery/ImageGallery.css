@@ -1,8 +1,7 @@
 .image-gallery-container {
-    
+    width: 100svw;
     background: url("../../assets/images/tech_globe.png");
-    /* background-blend-mode: multiply; */
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 200px;
 }
 
@@ -13,96 +12,16 @@
     gap: 50px;
 }
 
-@keyframes container-appear {
-    0% {transform: rotateX(0deg) translateX(-100%)};
-    100% {transform: rotateX(30deg) translateX(0%)};
-}
-
 .image-gallery-container li {
     list-style-type: none;
 }
 
-.image-gallery-container h2 {
-    display: block;
-    background-color: grey;
-    text-align: center;
-}
-
-.image-gallery-container img {
-    object-fit: cover;
-    height: auto;
-    width: 200px;
-}
-
-.image-gallery-item {
-    animation: container-appear 1s ease;
-    align-self: center;
-    position: relative;
-    background-color: rgb(37, 37, 46);
-    height: auto;
-    width: 200px;
-    box-shadow: 0 0 2vw rgb(0, 60, 255);
-    transition: transform 0.3s ease;
-    transform: perspective(1000px) rotateX(30deg) rotateY(30deg);
-}
-
-.image-gallery-item:hover  {
-    cursor: pointer;
-    background-color: rgb(37, 37, 46);
-    height: auto;
-    width: 200px;
-    box-shadow: 0 0 5vw rgb(5, 238, 129);
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(150%);
-    z-index: 1;
-}
-
-.image-gallery-centerpiece {
-    width: 100svw;
-    height: auto;
-    position: absolute;
-    background: url("../../assets/images/blue_tech.png");
-    top: 0%;
-    animation: centerItem 0.3s ease forwards;
-    z-index: 1;
-    justify-content: center;
-}
-
-.image-gallery-centerpiece img {
-    margin-top: 5svh;
-    width: min(600px, 100svw);
-    height: auto;
-    justify-self: center;
-}
-
-.image-gallery-centerpiece p {
-    font-size: 20px;
-    text-align: left;
-    width: min(600px, 90svw);
-    display: block;
-    background: linear-gradient(black -50%, rgb(0, 42, 77) 50%, black 150%);
-    padding: 20px;
-    justify-self: center;
-    margin: auto;
-}
-
-@keyframes showItem {
-    from {
-        transform: perspective(1000px) rotateX(30deg) rotateY(30deg) scale(0%);
-    }
-    to {
-        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(150%);
+@media (max-width: 320px) {
+    .image-gallery-container {
+        width: 320px; /* Adjust the container width for smaller viewports */
     }
 }
 
-@keyframes centerItem {
-    from {
-        height: 0%;
-        width: 0%;
-    }
-        
-    to {
-        height: auto;
-        width: 100%;
-    }
-}
+
+
 
