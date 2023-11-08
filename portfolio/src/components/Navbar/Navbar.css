@@ -1,0 +1,23 @@
+.Navbar {
+    min-width: 100svw;
+    display: flex;
+    background: linear-gradient(rgb(50, 50, 50)30%, black 80%, rgb(50, 50, 50));
+    justify-content: center;
+}
+
+.Navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.Navbar li {
+    font-size: 20px;
+    color: white;
+}
+
+.Navbar li:hover {
+    filter: drop-shadow(1px 1px rgb(0, 204, 255));
+}

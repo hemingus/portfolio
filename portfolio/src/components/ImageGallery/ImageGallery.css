@@ -1,6 +1,6 @@
 .image-gallery-container {
-    width: 100svw;
-    background: url("../../assets/images/tech_globe.png");
+    min-width: 100svw;
+    /* background: url("../../assets/images/tech_globe.png"); */
     padding-top: 100px;
     padding-bottom: 200px;
 }
