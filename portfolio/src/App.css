@@ -1,8 +1,8 @@
 #root {
-  width: 100svw;
-  min-height: 100svh;
+  min-width: 100svw;
+  min-height: 100lvh;
   text-align: center;
-  background-color: black;
+  background: url("./assets/images/tech_globe.png");
   color: white;
 }
 
@@ -49,6 +49,27 @@
   flex: wrap;
 }
 
+.App-container h1 {
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 0 20px rgb(90, 208, 255);
+  display: block;
+  background: radial-gradient(black 30%, rgb(6, 74, 119) 125%);
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 700px;
+}
+
+.App-container h2 {
+  display: block;
+  background: linear-gradient(rgb(0, 119, 255) 0%, rgb(1, 0, 78) 50%, black);
+  position: relative;
+  border-style:silver;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 .App-container p {
-  font-size: 30px;
+  font-size: 1.5rem;
 }

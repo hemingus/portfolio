@@ -1,0 +1,51 @@
+.HomePage-container {
+    position: relative;
+    width: min(700px, 100svw);
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 50px;
+}
+
+.portrait-box {
+    background: url("./src/assets/images/heming_coder.png");
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0 0 100px black;
+
+}
+
+.link-container {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.link-button {
+    font-size: 30px;
+    color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../assets/images/blue_tech.png");
+    border-radius: 5%;
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(5px 5px 5px white);
+}
+
+
+.link-button:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(0, 255, 85);
+    transition: transform 0.2s linear;
+    transform: scale(110%);
+    background-size: cover;
+}

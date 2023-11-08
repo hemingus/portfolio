@@ -20,7 +20,7 @@
 }
 
 .GalleryCenterpiece p {
-    font-size: 20px;
+    font-size: 1rem;
     text-align: left;
     width: min(600px, 80%);
     display: block;
@@ -31,15 +31,18 @@
 }
 
 .GalleryCenterpiece h2 {
-    padding-top: 30px;
-    font-size: max(30px, 10vh);
+    font-size: 3rem;
+    text-shadow: 5px 5px blue;
 }
 
 .GalleryCenterpiece h3 {
-    font-size: 12px;
-    position: fixed;
-    top: 10px; 
+    font-size: 14px;
     color: blue;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    animation: breathingText 4s linear infinite
+}
+
+@keyframes breathingText {
+    0% {transform: scale(100%)}
+    50% {transform: scale(120%)}
+    100% {transform: scale(100%)}
 }

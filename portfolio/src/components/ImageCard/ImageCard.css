@@ -7,6 +7,10 @@
     box-shadow: 0 0 40px rgb(0, 60, 255);
     transition: transform 0.3s ease;
     transform: perspective(1000px) rotateX(30deg) rotateY(30deg);
+    padding: 10px;
+    border: solid;
+    border-width: 5px;
+    border-radius: 10%;
 }
 
 .ImageCard:hover {

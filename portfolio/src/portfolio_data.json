@@ -1,20 +1,25 @@
 {
     "name": "Heming Hanevik",
     "profile-picture": "./src/assets/images/profilepicture.jpg",
-    "introduction-text": "Short description of self",
+    "introduction-text": "Om meg: Jeg er Heming, en aspirerende front-end / full-stack utvikler. Med lang bakgrunn som musiker har jeg , har jeg funnet en ny lidenskap i programmering.Drives av å se nyttige, flotte eller gøyale applikasjoner kommer til live gjennom kode. Jeg har nylig fullført en bachelorgrad i datateknologi ved Universitetet i Bergen. Det har gitt meg et solid fundament for å videreutvikle meg innen programmering.",
     "projects": [
         {
-            "header": "Tetris",
-            "text": "text describing project",
-            "image": "tetris_image1.png"
+            "header": "Hold'em Poker App",
+            "text": "Made from scratch using the Java Swing framwork. Includes a thoroughly tested hand evaluator, which was a key challenge in programming this app. I also custom made the card deck and other sprites, using pixel-art.",
+            "image": "poker_image1.png"
         },
         {
-            "header": "Tetris2",
-            "text": "Semester assignment, individually over 3 weeks. Made using Java Swing and a MVP (Model View Controller) architechture. My version exceeded expectations and was rewarded with a diploma. (image) They highlighted a clean, good looking design and how used the grid-class to create a logo of the game.",
+            "header": "Tetris",
+            "text": "Semester assignment, individually over 3 weeks. Made using Java Swing and a MVC architechture. My version exceeded expectations and was rewarded with a diploma. (image) They highlighted a clean, good looking design and how used the grid-class to create a logo of the game.",
             "image": "tetris_image2.png"
         },
         {
-            "header": "Tetris3",
+            "header": "RoboRally",
+            "text": "text describing project 2",
+            "image": "tetris_image1.png"
+        },
+        {
+            "header": "Music Space",
             "text": "text describing project 2",
             "image": "tetris_image1.png"
         }

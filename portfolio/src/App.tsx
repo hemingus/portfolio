@@ -1,18 +1,20 @@
 import './App.css'
-import ImageGallery from './components/ImageGallery/ImageGallery'
-import VideoGallery from './components/VideoGallery/VideoGallery'
-import jsonData from './portfolio_data.json'
+import HomePage from './Pages/HomePage'
+import ProjectsPage from './Pages/ProjectsPage'
+import { Routes, Route } from 'react-router-dom'
+import { CustomLink } from './utilities/CustomLink'
+import Navbar from './components/Navbar/Navbar'
 
-const projects = jsonData.projects
 
 function App() {
-  
-
   return (
     <>
       <div className="App-container">
-        <h1>Projects</h1>
-        <ImageGallery entries={projects}/>
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/projects" element={<ProjectsPage/>} />
+        </Routes>
       </div>
     </>
   )
