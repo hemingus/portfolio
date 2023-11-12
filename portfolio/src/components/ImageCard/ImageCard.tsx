@@ -11,7 +11,7 @@ const ImageCard: React.FC<ImageCardProps> = ({path, entry}) => {
     return (
         <div className="ImageCard">
             <h2>{entry.header}</h2>
-            <img src={path + entry.image} alt="magicpyramid" />
+            <img src={path + entry.image} alt="image" />
         </div>
     )
 }

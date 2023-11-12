@@ -4,6 +4,12 @@
   text-align: center;
   background: url("./assets/images/tech_globe.png");
   color: white;
+  
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
 }
 
 .logo {

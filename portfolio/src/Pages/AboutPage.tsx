@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 import './Pages.css'
 
 
-const HomePage = () => {
+const AboutPage = () => {
     return (
         <div className="HomePage-container">
-            <h1 className="grid-item-full">Heming Hanevik</h1>
-            <h2 className="grid-item-full">Junior Developer</h2>
+            <h1 className="grid-item-full">About me</h1>
+            <h2 className="grid-item-full">Musician</h2>
             <div className="portrait-box"></div>
             <p>
                 Hi, my name is Heming.<br/>
@@ -29,4 +29,4 @@ const HomePage = () => {
     )
 }
 
-export default HomePage
+export default AboutPage

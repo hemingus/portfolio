@@ -6,6 +6,10 @@
     margin-bottom: 50px;
 }
 
+.HomePage-container p {
+    padding: 10px;
+}
+
 .portrait-box {
     background: url("./src/assets/images/heming_coder.png");
     background-size: cover;
@@ -14,8 +18,27 @@
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    box-shadow: 0 0 100px black;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
 
+.portrait-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, transparent 25%, rgb(0, 162, 255) 200%);
+    background-clip: padding-box;
+    z-index: 1;
+    animation: pulse1 3s ease-in-out infinite;
+}
+
+@keyframes pulse1 {
+    0%, 100% {left: 0;}
+    50% {left: 50%;}
 }
 
 .link-container {
@@ -26,6 +49,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    grid-column: span 3;
 }
 
 .link-button {
@@ -48,4 +72,41 @@
     transition: transform 0.2s linear;
     transform: scale(110%);
     background-size: cover;
+}
+
+
+.HomePage-container p {
+    white-space: pre-line;
+    text-align: left;
+    padding-left: 10px;
+    /* border: solid;
+    border-width: 3px;
+    border-color: rgb(0, 4, 255);
+    border-radius: 2%; */
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    background: linear-gradient(black -50%, rgb(0, 42, 77) 50%, black 150%);
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+@media (min-width: 600px) {
+    .HomePage-container {
+        position: relative;
+        width: min(700px, 100svw);
+        left: 50%;
+        transform: translate(-50%);
+        margin-bottom: 50px;
+        display: grid;
+        grid-column: 1;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 2fr;
+    }
+    .grid-item-2 {
+        grid-column: span 2;
+    }
+    .grid-item-full {
+        grid-column: span 3;
+        white-space: pre-line;
+    }
 }

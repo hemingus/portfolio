@@ -5,23 +5,26 @@
     "projects": [
         {
             "header": "Hold'em Poker App",
-            "text": "Made from scratch using the Java Swing framwork. Includes a thoroughly tested hand evaluator, which was a key challenge in programming this app. I also custom made the card deck and other sprites, using pixel-art.",
-            "image": "poker_image1.png"
+            "text": ["Made from scratch using the Java Swing framwork. Includes a thoroughly tested hand evaluator, which was a key challenge in programming this app. I also custom made the card deck and other sprites, using pixel-art.", "text til neste bilde SHÅ HER!", "her tecee", "enda mer text"],
+            "image": ["poker_image1.png", "clover_cards.gif", "musicspace_image1.png"],
+            "iframe": "https://www.youtube.com/embed/DriJqf5RDlM"
+
         },
         {
             "header": "Tetris",
-            "text": "Semester assignment, individually over 3 weeks. Made using Java Swing and a MVC architechture. My version exceeded expectations and was rewarded with a diploma. (image) They highlighted a clean, good looking design and how used the grid-class to create a logo of the game.",
-            "image": "tetris_image2.png"
+            "text": ["Semester assignment, individually over 3 weeks. Made using Java Swing and a MVC architechture. My version exceeded expectations and was rewarded with a diploma. (image) They highlighted a clean, good looking design and how used the grid-class to create a logo of the game."],
+            "image": ["tetris_image2.png"]
         },
         {
             "header": "RoboRally",
-            "text": "text describing project 2",
-            "image": "tetris_image1.png"
+            "text": ["text describing project 2"],
+            "image": ["roborally_image1.png", "roborally_image2.png"]
         },
         {
             "header": "Music Space",
-            "text": "text describing project 2",
-            "image": "tetris_image1.png"
+            "text": ["text describing project 2"],
+            "image": ["musicspace_image1.png"],
+            "iframe": "https://hemingmusic.azurewebsites.net"
         }
     ],
     "ending-text": "ending paragraph"

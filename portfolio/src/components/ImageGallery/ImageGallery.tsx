@@ -7,15 +7,15 @@ import GalleryCenterpiece from '../GalleryCenterpiece/GalleryCenterpiece'
 const path : string = "./src/assets/images/magic_pyramid/"
 
 interface ImageGalleryProps { 
-    entries: {header: string, text: string, image: string}[]
+    entries: {header: string, text: string[], image: string[], iframe?: string}[]
 }
 
 const ImageGallery: React.FC<ImageGalleryProps> = ({entries}) => {
     const [items, setItems] = useState(entries)
     const [itemSelected, setItemSelected] = useState(false)
-    const [selectedItem, setSelectedItem] = useState({"header": "", "text": "", "image": ""})
+    const [selectedItem, setSelectedItem] = useState({"header": "", "text": [""], "image": [""]})
 
-    function handleItemClick(item: { header: string; text: string; image: string }) {
+    function handleItemClick(item: { header: string; text: string[]; image: string[], iframe?: string}) {
         setSelectedItem(item);
         setItemSelected(true);
       }
@@ -26,8 +26,8 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({entries}) => {
                 <div className="image-gallery-container">
                     <ul>
                         {items.map((item)=>(
-                            <li key={item.text} onClick={() => handleItemClick(item)}>
-                                <ImageCard path={path} entry={item} />
+                            <li key={item.header} onClick={() => handleItemClick(item)}>
+                                <ImageCard path={path} entry={{header: item.header, text: item.text[0], image: item.image[0]}} />
                             </li>))}
                     </ul>
                 </div>
@@ -36,7 +36,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({entries}) => {
         } else {
             return (
                 <div onClick={() => {setItemSelected(false)}}>
-                    <GalleryCenterpiece path={path} content={selectedItem} />
+                    <GalleryCenterpiece key={selectedItem.header} path={path} content={selectedItem} />
                 </div>
             )
         }

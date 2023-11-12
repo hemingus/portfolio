@@ -10,6 +10,10 @@ const navbarLinks = [
     {
         "title": "Projects",
         "path": "/projects"
+    },
+    {
+        "title": "About",
+        "path": "/about"
     }
 ]
 
@@ -20,7 +24,7 @@ const Navbar = () => {
         <nav className="Navbar">
             <ul>
                 {navbarLinks.map((link)=>(
-                    <CustomLink to={link.path}>{link.title}</CustomLink>
+                    <CustomLink key={link.title} to={link.path}>{link.title}</CustomLink>
                 ))}
             </ul>
         </nav>

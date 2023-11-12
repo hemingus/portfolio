@@ -9,13 +9,21 @@
     left: 50%;
     transform: translate(-50%);
     background-color: black;
-    /* background: url("../../assets/images/blue_tech.png"); */
     justify-content: center;
+    display: grid;
+    column-span: 1;
+    gap: 20px;
 }
 
 .GalleryCenterpiece img {
     width: min(600px, 80%);
     height: auto;
+    justify-self: center;
+}
+
+.GalleryCenterpiece iframe {
+    width: 80%;
+    height: 50svh;
     justify-self: center;
 }
 
@@ -38,10 +46,10 @@
 .GalleryCenterpiece h3 {
     font-size: 14px;
     color: blue;
-    animation: breathingText 4s linear infinite
+    animation: pulse 4s linear infinite
 }
 
-@keyframes breathingText {
+@keyframes pulse {
     0% {transform: scale(100%)}
     50% {transform: scale(120%)}
     100% {transform: scale(100%)}
