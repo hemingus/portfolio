@@ -1,6 +1,7 @@
 import React from 'react'
 import { CustomLink } from '../../utilities/CustomLink'
 import './Navbar.css'
+import { useRef, useState, useEffect } from 'react'
 
 const navbarLinks = [
     {
@@ -17,17 +18,35 @@ const navbarLinks = [
     }
 ]
 
-
-
 const Navbar = () => {
+    const lines = '\u2630'
+    const navRef = useRef<HTMLElement>(null)
+    const [btnText, setBtnText] = useState(lines)
+
+    const handleClick = () => {
+        showNavBar()
+        setBtnText((prevText: string) =>
+          prevText === lines ? "Close" : lines
+        );
+      };
+
+    const showNavBar = () => {
+        navRef.current?.classList.toggle("responsive_nav")
+    }
+
+
     return (
-        <nav className="Navbar">
-            <ul>
-                {navbarLinks.map((link)=>(
-                    <CustomLink key={link.title} to={link.path}>{link.title}</CustomLink>
-                ))}
-            </ul>
-        </nav>
+        <div className="Navbar">
+            <nav ref={navRef}>
+                <ul>
+                    {navbarLinks.map((link)=>(
+                        <CustomLink key={link.title} to={link.path}>{link.title}</CustomLink>
+                    ))}
+                    <button onClick={handleClick}>{btnText}</button>
+                </ul>
+                
+            </nav>
+        </div>
     )
 }
 

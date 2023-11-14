@@ -24,7 +24,7 @@ const HomePage = () => {
             <div className="link-container">
                 <Link className="link-button" to="/projects">Projects</Link>
                 <Link className="link-button" to="/about">About</Link>
-            </div>    
+            </div>
         </div>
     )
 }

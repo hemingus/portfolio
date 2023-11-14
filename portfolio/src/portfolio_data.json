@@ -4,27 +4,45 @@
     "introduction-text": "Om meg: Jeg er Heming, en aspirerende front-end / full-stack utvikler. Med lang bakgrunn som musiker har jeg , har jeg funnet en ny lidenskap i programmering.Drives av å se nyttige, flotte eller gøyale applikasjoner kommer til live gjennom kode. Jeg har nylig fullført en bachelorgrad i datateknologi ved Universitetet i Bergen. Det har gitt meg et solid fundament for å videreutvikle meg innen programmering.",
     "projects": [
         {
-            "header": "Hold'em Poker App",
-            "text": ["Made from scratch using the Java Swing framwork. Includes a thoroughly tested hand evaluator, which was a key challenge in programming this app. I also custom made the card deck and other sprites, using pixel-art.", "text til neste bilde SHÅ HER!", "her tecee", "enda mer text"],
-            "image": ["poker_image1.png", "clover_cards.gif", "musicspace_image1.png"],
+            "header": "Music Space",
+            "text": ["This is a personal website i created as a means of learing web-development technologies.", 
+            "React on the frontend.", 
+            "ASP.NET Core and CosmosDB on the backend.", 
+            "Using Azure web services to host the application, REST API and database."],
+            "images": ["musicspace_image1.png"],
+            "iframe": "https://hemingmusic.azurewebsites.net"
+        },
+        {
+            "header": "Hold'em Poker",
+            "text": ["Heads up poker game vs AI",
+            "Made from scratch using the Java Swing framwork.",
+            "Includes a thoroughly tested hand evaluator, which was a key challenge in programming this app.", 
+            "I also custom made the card deck and other sprites, using pixel-art."],
+            "images": ["poker_image1.png", 
+            "clover_cards.gif", 
+            "hearts_cards.gif",
+            "spades_cards.gif",
+            "diamond_cards.gif"
+            ],
             "iframe": "https://www.youtube.com/embed/DriJqf5RDlM"
-
         },
         {
             "header": "Tetris",
-            "text": ["Semester assignment, individually over 3 weeks. Made using Java Swing and a MVC architechture. My version exceeded expectations and was rewarded with a diploma. (image) They highlighted a clean, good looking design and how used the grid-class to create a logo of the game."],
-            "image": ["tetris_image2.png"]
+            "text": ["Classic game written in Java", 
+            "Semester assignment, individually over 3 weeks.", "Made using Java Swing and a MVC architechture.", 
+            "My version exceeded expectations and was rewarded with a diploma.", 
+            "They highlighted a clean good looking design."],
+            "images": 
+            ["tetris_image2.png"],
+            "iframe": "http://localhost:5173/projects"
         },
         {
             "header": "RoboRally",
-            "text": ["text describing project 2"],
-            "image": ["roborally_image1.png", "roborally_image2.png"]
-        },
-        {
-            "header": "Music Space",
-            "text": ["text describing project 2"],
-            "image": ["musicspace_image1.png"],
-            "iframe": "https://hemingmusic.azurewebsites.net"
+            "text": ["A group-project as part of System Development course.", 
+            "As a team five students, we were adopting Agile working methods", 
+            "to create a digital version of the board game Robo Rally."],
+            "images": ["roborally_image1.png", 
+            "roborally_image2.png"]
         }
     ],
     "ending-text": "ending paragraph"

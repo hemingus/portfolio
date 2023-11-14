@@ -1,6 +1,6 @@
 .HomePage-container {
     position: relative;
-    width: min(700px, 100svw);
+    width: min(1000px, 100svw);
     left: 50%;
     transform: translate(-50%);
     margin-bottom: 50px;
@@ -92,7 +92,6 @@
 @media (min-width: 600px) {
     .HomePage-container {
         position: relative;
-        width: min(700px, 100svw);
         left: 50%;
         transform: translate(-50%);
         margin-bottom: 50px;
