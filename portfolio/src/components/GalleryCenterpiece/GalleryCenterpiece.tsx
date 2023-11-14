@@ -3,30 +3,32 @@ import './GalleryCenterpiece.css'
 
 interface GalleryCenterpieceProps {
     path: string
-    content: {header: string, text: string[], image: string[], iframe?: string}
+    content: {header: string, text: string[], images: string[], iframe?: string}
 }
 
 const GalleryCenterpiece: React.FC<GalleryCenterpieceProps> = ({path, content}) => {
 
-    function extra_images(): JSX.Element {
-        if (content.image.length > 1) {
-            return (
-                <div>
-                    {content.text.slice(1).map((text)=>(
-                    <p>{text}</p>
-                    ))}
-                    {content.image.slice(1).map((image)=>(
-                    <img src={path + image} />
-                    ))}
-                </div>
-            )
-        }
+    function DisplayText(): JSX.Element {
         return (
-            <></>
+            <div>
+                {content.text.map((text)=>(
+                <p key={text}>{text}</p>
+                ))}
+            </div>
         )
     }
 
-    function show_iframe(): JSX.Element {
+    function DisplayImages(): JSX.Element {
+        return (
+            <div className="image-grid">
+                {content.images.map((image)=>(
+                <img key={image} src={path + image} alt="image"/>
+                ))}
+            </div>
+        )
+    }
+
+    function DisplayIframe(): JSX.Element {
         if (content.iframe) {
             return (
                 <iframe 
@@ -45,10 +47,9 @@ const GalleryCenterpiece: React.FC<GalleryCenterpieceProps> = ({path, content}) 
             <div className="GalleryCenterpiece">
                 <h3>Click anywhere to go back</h3>
                 <h2>{content.header}</h2>
-                <p>{content.text[0]}</p>
-                <img src={path + content.image[0]} alt="image" />
-                {show_iframe()}
-                {extra_images()}
+                {DisplayText()}
+                {DisplayImages()}
+                {DisplayIframe()}
             </div>
         </div>
     )

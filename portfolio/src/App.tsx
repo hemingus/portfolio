@@ -1,7 +1,7 @@
 import './App.css'
-import HomePage from './Pages/HomePage'
-import ProjectsPage from './Pages/ProjectsPage'
-import AboutPage from './Pages/AboutPage'
+import HomePage from './pages/HomePage'
+import ProjectsPage from './pages/ProjectsPage'
+import AboutPage from './pages/AboutPage'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 

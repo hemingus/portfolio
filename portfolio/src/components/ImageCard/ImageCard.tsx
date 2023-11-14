@@ -12,6 +12,7 @@ const ImageCard: React.FC<ImageCardProps> = ({path, entry}) => {
         <div className="ImageCard">
             <h2>{entry.header}</h2>
             <img src={path + entry.image} alt="image" />
+            <p>{entry.text}</p>
         </div>
     )
 }
