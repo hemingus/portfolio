@@ -1,7 +1,7 @@
 import React from 'react'
 import { CustomLink } from '../../utilities/CustomLink'
 import './Navbar.css'
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState } from 'react'
 
 const navbarLinks = [
     {
@@ -18,7 +18,7 @@ const navbarLinks = [
     }
 ]
 
-const Navbar = () => {
+const Navbar = () => { 
     const lines = '\u2630'
     const navRef = useRef<HTMLElement>(null)
     const [btnText, setBtnText] = useState(lines)

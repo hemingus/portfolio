@@ -27,6 +27,8 @@
     grid-column: span 2;
     height: auto;
     justify-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .GalleryCenterpiece iframe {

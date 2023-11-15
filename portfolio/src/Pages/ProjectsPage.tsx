@@ -8,7 +8,6 @@ const ProjectsPage = () => {
     return (
         <>
             <h1>Projects</h1>
-            <p>Here are my projects:</p>
             <ImageGallery entries={projects} />
         </>
     )

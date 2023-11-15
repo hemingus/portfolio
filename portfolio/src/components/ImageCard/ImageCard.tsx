@@ -3,7 +3,7 @@ import './ImageCard.css'
 
 interface ImageCardProps {
     path : string
-    entry : {header: string, text: string, image: string}
+    entry : {header: string, techstack: string, text: string, image: string}
 }
 
 const ImageCard: React.FC<ImageCardProps> = ({path, entry}) => {
@@ -13,6 +13,7 @@ const ImageCard: React.FC<ImageCardProps> = ({path, entry}) => {
             <h2>{entry.header}</h2>
             <img src={path + entry.image} alt="image" />
             <p>{entry.text}</p>
+            <p>{entry.techstack}</p>
         </div>
     )
 }

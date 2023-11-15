@@ -1,9 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './Pages.css'
+import './HomePage.css'
 
 
 const HomePage = () => {
+    const onButtonClick = () => {
+        const pdfUrl = "./src/assets/images/magic_pyramid/CVeng_Heming Hanevik.png";
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "CVeng_Heming Hanevik.png";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
     return (
         <div className="HomePage-container">
             <h1 className="grid-item-full">Heming Hanevik</h1>
@@ -21,10 +31,17 @@ const HomePage = () => {
                 -Become part of a team where we learn and grow. <br/>
                 -Get experience with larger systems. <br/>
             </p>
+            <h3>Check out out some of my projects</h3>
             <div className="link-container">
                 <Link className="link-button" to="/projects">Projects</Link>
                 <Link className="link-button" to="/about">About</Link>
             </div>
+            <h4>Get my CV:</h4>
+            <button onClick={onButtonClick}>
+                    Download PDF
+            </button> 
+            <a href="https://www.linkedin.com/in/heming-hanevik-395220129/">LinkedIn</a>
+            <a href="https://github.com/hemingus">GitHub</a>
         </div>
     )
 }

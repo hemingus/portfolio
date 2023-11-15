@@ -5,6 +5,7 @@
     "projects": [
         {
             "header": "Music Space",
+            "techstack": "JavaScript | HTML | CSS | ASP.NET Core | Azure | CosmosDB | Three.js",
             "text": ["This is a personal website i created as a means of learing web-development technologies.", 
             "React on the frontend.", 
             "ASP.NET Core and CosmosDB on the backend.", 
@@ -14,6 +15,7 @@
         },
         {
             "header": "Hold'em Poker",
+            "techstack": "Java | Java Swing | Java AWT | PixelArt",
             "text": ["Heads up poker game vs AI",
             "Made from scratch using the Java Swing framwork.",
             "Includes a thoroughly tested hand evaluator, which was a key challenge in programming this app.", 
@@ -28,6 +30,7 @@
         },
         {
             "header": "Tetris",
+            "techstack": "Java | Java Swing | Java AWT",
             "text": ["Classic game written in Java", 
             "Semester assignment, individually over 3 weeks.", "Made using Java Swing and a MVC architechture.", 
             "My version exceeded expectations and was rewarded with a diploma.", 
@@ -38,6 +41,7 @@
         },
         {
             "header": "RoboRally",
+            "techstack": "Group Project | Agile | Java | libGDX | Tiled",
             "text": ["A group-project as part of System Development course.", 
             "As a team five students, we were adopting Agile working methods", 
             "to create a digital version of the board game Robo Rally."],

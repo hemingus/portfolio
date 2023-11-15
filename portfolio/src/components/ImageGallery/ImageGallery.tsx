@@ -7,15 +7,15 @@ import GalleryCenterpiece from '../GalleryCenterpiece/GalleryCenterpiece'
 const path : string = "./src/assets/images/magic_pyramid/"
 
 interface ImageGalleryProps { 
-    entries: {header: string, text: string[], images: string[], iframe?: string}[]
+    entries: { header: string, techstack: string, text: string[], images: string[], iframe?: string }[]
 }
 
 const ImageGallery: React.FC<ImageGalleryProps> = ({entries}) => {
     const [items, setItems] = useState(entries)
     const [itemSelected, setItemSelected] = useState(false)
-    const [selectedItem, setSelectedItem] = useState({"header": "", "text": [""], "images": [""]})
+    const [selectedItem, setSelectedItem] = useState({"header": "", "techstack": "", "text": [""], "images": [""]})
 
-    function handleItemClick(item: { header: string; text: string[]; images: string[], iframe?: string}) {
+    function handleItemClick(item: { header: string, techstack: string, text: string[]; images: string[], iframe?: string }) {
         setSelectedItem(item);
         setItemSelected(true);
       }
@@ -27,7 +27,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({entries}) => {
                     <ul>
                         {items.map((item)=>(
                             <li key={item.header} onClick={() => handleItemClick(item)}>
-                                <ImageCard path={path} entry={{header: item.header, text: item.text[0], image: item.images[0]}} />
+                                <ImageCard path={path} entry={{header: item.header, techstack: item.techstack, text: item.text[0], image: item.images[0]}} />
                             </li>))}
                     </ul>
                 </div>
