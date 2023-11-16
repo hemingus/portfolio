@@ -15,6 +15,10 @@ const navbarLinks = [
     {
         "title": "About",
         "path": "/about"
+    },
+    {
+        "title": "Contact",
+        "path": "/contact"
     }
 ]
 
