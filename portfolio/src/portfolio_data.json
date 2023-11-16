@@ -35,9 +35,8 @@
             "Semester assignment, individually over 3 weeks.", "Made using Java Swing and a MVC architechture.", 
             "My version exceeded expectations and was rewarded with a diploma.", 
             "They highlighted a clean good looking design."],
-            "images": 
-            ["tetris_image2.png"],
-            "iframe": "http://localhost:5173/projects"
+            "images": ["tetris_image2.png",
+            "tetris_diplom.jpg"]
         },
         {
             "header": "RoboRally",

@@ -4,7 +4,6 @@
   text-align: center;
   background: url("./assets/images/tech_globe.png");
   color: white;
-  
 }
 
 body {
@@ -68,6 +67,7 @@ body {
 }
 
 .App-container h2 {
+  font-size: 1.8rem;
   display: block;
   background: linear-gradient(rgb(0, 119, 255) 0%, rgb(1, 0, 78) 50%, black);
   position: relative;
@@ -77,5 +77,15 @@ body {
 }
 
 .App-container p {
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+
+.App-container button {
+  color: lightblue;
+  background: linear-gradient(transparent, blue, transparent);
+}
+
+.App-container button:hover {
+  color: white;
+  box-shadow: 0 0 10px white;
 }

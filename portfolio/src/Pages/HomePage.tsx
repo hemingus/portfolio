@@ -17,31 +17,28 @@ const HomePage = () => {
     return (
         <div className="HomePage-container">
             <h1 className="grid-item-full">Heming Hanevik</h1>
-            <h2 className="grid-item-full">Junior Developer</h2>
+            <h2 className="grid-item-full">&lt;Frontend Developer /&gt;</h2>
             <div className="portrait-box"></div>
             <p>
-                Hi, my name is Heming.<br/>
+                <span className="text-2rem"> Hi,  I'm Heming</span><br/>
                 I am a newly graduated student of Data Technology
-                looking for work as a software developer.
+                looking for work as a frontend developer.
                 As a life-long musician, i love to be creative.
-                With my newfound passion for programming i wish to:
+                
             </p>
-            <p className="grid-item-full">
-                -Contribute with my skills and knowledge. <br/>
-                -Become part of a team where we learn and grow. <br/>
-                -Get experience with larger systems. <br/>
-            </p>
-            <h3>Check out out some of my projects</h3>
+            <h3 className="grid-item-full">Check out my projects, or learn more about me</h3>
             <div className="link-container">
                 <Link className="link-button" to="/projects">Projects</Link>
                 <Link className="link-button" to="/about">About</Link>
             </div>
-            <h4>Get my CV:</h4>
-            <button onClick={onButtonClick}>
-                    Download PDF
-            </button> 
-            <a href="https://www.linkedin.com/in/heming-hanevik-395220129/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/hemingus" target="_blank">GitHub</a>
+            <div className="footer-container">
+                <h4>Get my CV:</h4>
+                <button onClick={onButtonClick}>
+                        Download PDF
+                </button> 
+                <a href="https://www.linkedin.com/in/heming-hanevik-395220129/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/hemingus" target="_blank">GitHub</a>
+            </div>
         </div>
     )
 }
