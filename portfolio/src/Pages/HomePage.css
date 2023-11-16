@@ -74,14 +74,12 @@
     background-size: cover;
 }
 
-
 .HomePage-container p {
     white-space: pre-line;
     text-align: left;
     padding-left: 10px;
     box-shadow: 5px 5px 20px 5px black;
     width: fit-content;
-    /* background: linear-gradient(black -50%, rgb(0, 42, 77) 50%, black 150%); */
     border-top-left-radius: 10%;
     border-bottom-right-radius: 10%;
 }

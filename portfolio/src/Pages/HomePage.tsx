@@ -40,8 +40,8 @@ const HomePage = () => {
             <button onClick={onButtonClick}>
                     Download PDF
             </button> 
-            <a href="https://www.linkedin.com/in/heming-hanevik-395220129/">LinkedIn</a>
-            <a href="https://github.com/hemingus">GitHub</a>
+            <a href="https://www.linkedin.com/in/heming-hanevik-395220129/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/hemingus" target="_blank">GitHub</a>
         </div>
     )
 }

@@ -70,7 +70,7 @@ const aboutText: JSX.Element[] = [about_p1, about_p2, about_p3, about_p4]
 
     return (
         <div>
-            <h1>About me</h1>
+            <h1>About</h1>
             <div className="AboutPage-container">
                 {AboutText()}
                 <h2>Story and background</h2>
