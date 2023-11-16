@@ -1,4 +1,3 @@
-import React from 'react'
 import { CustomLink } from '../../utilities/CustomLink'
 import './Navbar.css'
 import { useRef, useState } from 'react'

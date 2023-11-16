@@ -1,4 +1,3 @@
-import React from 'react'
 import jsonData from '../portfolio_data.json'
 import ImageGallery from '../components/ImageGallery/ImageGallery'
 
