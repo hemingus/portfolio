@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './ImageGallery.css'
 import ImageCard from '../ImageCard/ImageCard'
 import GalleryCenterpiece from '../GalleryCenterpiece/GalleryCenterpiece'
@@ -15,6 +15,10 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({entries}) => {
     const [itemSelected, setItemSelected] = useState(false)
     const [selectedItem, setSelectedItem] = useState({"header": "", "techstack": "", "text": [""], "images": [""]})
 
+    useEffect(() => {
+        setItems(entries)
+    },[])
+    
     function handleItemClick(item: { header: string, techstack: string, text: string[]; images: string[], iframe?: string }) {
         setSelectedItem(item);
         setItemSelected(true);
