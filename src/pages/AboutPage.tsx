@@ -68,7 +68,7 @@ const AboutPage: React.FC = () => {
                     </section>
                     <h2>Story and background</h2>
                     <section className="text-long">
-                        {aboutText.slice(0, count).map((text)=>(text))}
+                        {aboutText.slice(0, count).map((text, index)=><div key={index}>{text}</div>)}
                         {moreButton()}
                     </section> 
                 </div>

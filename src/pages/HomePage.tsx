@@ -20,8 +20,8 @@ const HomePage = () => {
             <div className="portrait-box"></div>
             <p>
                 <span className="text-3rem"> Hi,  I'm Heming</span><br/>
-                With a interest for <span className="text-2rem">functionality and design</span>,<br/>
-                and fresh degree in <span className="text-2rem">data technology</span>,<br/>
+                With an interest for <span className="text-2rem">functionality and design</span>,<br/>
+                and a fresh degree in <span className="text-2rem">data technology</span>,<br/>
                 I am looking for work as a frontend developer.
                 
                 
