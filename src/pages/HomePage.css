@@ -74,6 +74,7 @@
 }
 
 .HomePage-container p {
+    font-size: 1.5rem;
     white-space: pre-line;
     text-align: left;
     padding: 10px;
@@ -86,13 +87,20 @@
     border-radius: 10%;
     border-top-left-radius: 10%;
     border-bottom-right-radius: 10%;
-    justify-self: right;
+    justify-self: center;
     background: linear-gradient(black -100%, transparent 100%);
 }
 
+.text-3rem {
+    font-size: 3rem;
+    font-weight: 500;
+    color: lightblue;
+    text-shadow: 0 0 20px yellowgreen;
+}
 .text-2rem {
     font-size: 2rem;
-    color: lightblue;
+    font-weight: 500;
+    color: rgb(0, 191, 255);
 }
 
 .footer-container {

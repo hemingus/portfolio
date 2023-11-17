@@ -19,13 +19,14 @@ const HomePage = () => {
             <h2 className="grid-item-full">&lt;Frontend Developer /&gt;</h2>
             <div className="portrait-box"></div>
             <p>
-                <span className="text-2rem"> Hi,  I'm Heming</span><br/>
-                I am a newly graduated student of Data Technology
-                looking for work as a frontend developer.
-                As a life-long musician, i love to be creative.
+                <span className="text-3rem"> Hi,  I'm Heming</span><br/>
+                With a interest for <span className="text-2rem">functionality and design</span>,<br/>
+                and fresh degree in <span className="text-2rem">data technology</span>,<br/>
+                I am looking for work as a frontend developer.
+                
                 
             </p>
-            <h3 className="grid-item-full">Check out my projects, or learn more about me</h3>
+            <h3 className="grid-item-full">Check out my projects, or read more about me</h3>
             <div className="link-container">
                 <Link className="link-button" to="/projects">Projects</Link>
                 <Link className="link-button" to="/about">About</Link>

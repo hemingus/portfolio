@@ -3,7 +3,7 @@ import './GalleryCenterpiece.css'
 
 interface GalleryCenterpieceProps {
     path: string
-    content: {header: string, text: string[], images: string[], iframe?: string}
+    content: {header: string, techstack: string, text: string[], images: string[], iframe?: string}
 }
 
 const GalleryCenterpiece: React.FC<GalleryCenterpieceProps> = ({path, content}) => {
@@ -47,6 +47,7 @@ const GalleryCenterpiece: React.FC<GalleryCenterpieceProps> = ({path, content}) 
             <div className="GalleryCenterpiece">
                 <h3>Click anywhere to go back</h3>
                 <h2>{content.header}</h2>
+                <h4>{content.techstack}</h4>
                 {DisplayText()}
                 {DisplayImages()}
                 {DisplayIframe()}

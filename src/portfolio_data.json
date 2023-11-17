@@ -42,7 +42,7 @@
             "header": "RoboRally",
             "techstack": "Group Project | Agile | Java | libGDX | Tiled",
             "text": ["A group-project as part of System Development course.", 
-            "As a team five students, we were adopting Agile working methods", 
+            "As a team of five students, we were adopting Agile working methods", 
             "to create a digital version of the board game Robo Rally."],
             "images": ["roborally_image1.png", 
             "roborally_image2.png"]
