@@ -1,12 +1,15 @@
 import React from 'react'
 import './GalleryCenterpiece.css'
 
+
+
 interface GalleryCenterpieceProps {
-    path: string
     content: {header: string, techstack: string, text: string[], images: string[], iframe?: string}
 }
 
-const GalleryCenterpiece: React.FC<GalleryCenterpieceProps> = ({path, content}) => {
+const GalleryCenterpiece: React.FC<GalleryCenterpieceProps> = ({content}) => {
+
+    const path='../../../src/assets/images/'
 
     function DisplayText(): JSX.Element {
         return (

@@ -1,12 +1,14 @@
 import React from 'react'
 import './ImageCard.css'
 
+
 interface ImageCardProps {
-    path : string
     entry : {header: string, techstack: string, text: string, image: string}
 }
 
-const ImageCard: React.FC<ImageCardProps> = ({path, entry}) => {
+const ImageCard: React.FC<ImageCardProps> = ({entry}) => {
+    
+    const path='../../../src/assets/images/'
 
     return (
         <div className="ImageCard">

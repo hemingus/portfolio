@@ -1,6 +1,5 @@
 .image-gallery-container {
     min-width: 100svw;
-    /* background: url("../../assets/images/tech_globe.png"); */
     padding-top: 100px;
     padding-bottom: 200px;
 }
@@ -18,7 +17,7 @@
 
 @media (max-width: 320px) {
     .image-gallery-container {
-        width: 320px; /* Adjust the container width for smaller viewports */
+        width: 320px;
     }
 }
 
