@@ -23,8 +23,6 @@ const HomePage = () => {
                 With an interest for <span className="text-2rem">functionality and design</span>,<br/>
                 and a fresh degree in <span className="text-2rem">data technology</span>,<br/>
                 I am looking for work as a frontend developer.
-                
-                
             </p>
             <h3 className="grid-item-full">Check out my projects, or read more about me</h3>
             <div className="link-container">

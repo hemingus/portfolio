@@ -13,7 +13,7 @@
     height: 300px;
     position: relative;
     left: 50%;
-    transform: translate(-50%);
+    animation: enterframe 0.7s ease-in forwards;
     border: solid;
     border-width: 15px;
     border-style: ridge;
@@ -21,6 +21,14 @@
     border-right: none;
     box-shadow: 10px 10px 5px black;
 }
+
+@keyframes enterframe {
+    0% {transform: translate(0%) scale(60%) perspective(1000px) rotateY(-30deg); opacity: 0;}
+    50% { opacity: 0.2;}
+    100% {transform: translate(-50%) scale(100%) perspective(1000px) rotateY(20deg); opacity: 1;}
+}
+
+
 
 .portrait-box::before {
     content: '';
@@ -89,6 +97,12 @@
     border-bottom-right-radius: 10%;
     justify-self: center;
     background: linear-gradient(black -100%, transparent 100%);
+    animation: showtext 0.7s ease-in forwards;
+}
+
+@keyframes showtext {
+    0% {transform: scale(50%); opacity: 0;}
+    100% {transform: scale(100%); opacity: 1;}
 }
 
 .text-3rem {
