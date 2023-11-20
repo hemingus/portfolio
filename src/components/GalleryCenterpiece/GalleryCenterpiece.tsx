@@ -9,7 +9,7 @@ interface GalleryCenterpieceProps {
 
 const GalleryCenterpiece: React.FC<GalleryCenterpieceProps> = ({content}) => {
 
-    const path='../../../src/assets/images/'
+    const path='../../assets/images/'
 
     function DisplayText(): JSX.Element {
         return (

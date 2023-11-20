@@ -8,7 +8,7 @@ interface ImageCardProps {
 
 const ImageCard: React.FC<ImageCardProps> = ({entry}) => {
     
-    const path='../../../src/assets/images/'
+    const path='../../assets/images/'
 
     return (
         <div className="ImageCard">
