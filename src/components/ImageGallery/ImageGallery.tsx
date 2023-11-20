@@ -4,7 +4,7 @@ import './ImageGallery.css'
 import ImageCard from '../ImageCard/ImageCard'
 import GalleryCenterpiece from '../GalleryCenterpiece/GalleryCenterpiece'
 
-const path : string = "./src/assets/images/magic_pyramid/"
+const path : string = "./src/assets/images/"
 
 interface ImageGalleryProps { 
     entries: { header: string, techstack: string, text: string[], images: string[], iframe?: string }[]
