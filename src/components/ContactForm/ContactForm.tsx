@@ -33,34 +33,34 @@ const ContactForm: React.FC = () => {
   return (
     <div className="form-container">
         <form onSubmit={handleSubmit}>
-        <label>
-            Name:
-            <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            />
-        </label>
-        <label>
-            Email:
-            <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            />
-        </label>
-        <label>
-            Message:
-        </label>
-            <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            />
-        
-        <button type="submit">Submit</button>
+            <label>
+                Name:
+                <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                />
+            </label>
+            <label>
+                Email:
+                <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                />
+            </label>
+            <label>
+                Message:
+            </label>
+                <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                />
+            
+            <button type="submit">Submit</button>
         </form>
     </div>
   );
