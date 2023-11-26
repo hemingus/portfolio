@@ -40,6 +40,10 @@ const Navbar = () => {
 
     return (
         <div className="Navbar">
+            <div className="navbar-left">
+                <img src="/music_space.png" className="navbar-logo"></img>
+                <div className="navbar-title">Heming Portfolio</div>
+            </div>
             <nav ref={navRef}>
                 <ul>
                     {navbarLinks.map((link)=>(

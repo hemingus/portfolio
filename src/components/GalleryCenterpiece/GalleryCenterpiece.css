@@ -41,10 +41,12 @@
     font-size: 1rem;
     text-align: center;
     display: block;
-    background: linear-gradient(black -50%, rgb(0, 42, 77) 50%, black 150%);
+    background: linear-gradient(black -200%, lightblue);
     padding: 10px;
     justify-self: center;
     margin: auto;
+    color: black;
+    font-weight: 600;
 }
 
 .GalleryCenterpiece h2 {
@@ -54,12 +56,5 @@
 
 .GalleryCenterpiece h3 {
     font-size: 14px;
-    color: blue;
-    animation: pulse 4s linear infinite
-}
-
-@keyframes pulse {
-    0% {transform: scale(100%)}
-    50% {transform: scale(120%)}
-    100% {transform: scale(100%)}
+    color: silver;
 }
