@@ -20,13 +20,6 @@
     }
 }
 
-.Image-section {
-    grid-column: span 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-}
-
 .AboutPage-container h2 {
     grid-column: span 3;
 }
@@ -47,6 +40,10 @@
     border-bottom-right-radius: 10%;
     background: linear-gradient(black -100%, transparent 100%);
     
+}
+
+.AboutPage-container img {
+    max-width: 600px;
 }
 
 @keyframes shadow-pulse {
@@ -85,11 +82,6 @@
     font-size: 1rem;
 }
 
-.Image-section img {
-    width: 100%;
-    border-radius: 50%;
-}
-
 .AboutPage-col-2 {
     grid-column: span 2;
 }
@@ -118,7 +110,8 @@
     .AboutPage-container p {
         grid-column: span 3;
     }
-    .Image-section {
+    .AboutPage-container img {
         grid-column: span 3;
+        width: 100svw;
     }
 }

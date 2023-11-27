@@ -78,12 +78,7 @@ const AboutPage: React.FC = () => {
                     and from playing and teaching music.
                 </p>
 
-                <section className="Image-section"> 
-                    <img src="./src/assets/images/smoltanlegg_image1.png"></img>
-                    <img className="AboutPage-col-2" src="./src/assets/images/smoltanlegg_image2.jpg"></img>
-                    <img src="./src/assets/images/kulturskulebandet.jpg"></img>
-                    <img className="AboutPage-col-2" src="./src/assets/images/kulturskulebandet.jpg"></img>
-                </section>
+                <img src="/workexperience.png" alt="image"></img>
                 
             </div>
         </div>
