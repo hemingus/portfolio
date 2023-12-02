@@ -15,7 +15,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({entries}) => {
 
     useEffect(() => {
         setItems(entries)
-    },[])
+    },[entries])
     
     function handleItemClick(item: { header: string, techstack: string, text: string[]; images: string[], iframe?: string }) {
         setSelectedItem(item);
