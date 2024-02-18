@@ -4,6 +4,12 @@
     "introduction-text": "Om meg: Jeg er Heming, en aspirerende front-end / full-stack utvikler. Med lang bakgrunn som musiker har jeg , har jeg funnet en ny lidenskap i programmering.Drives av å se nyttige, flotte eller gøyale applikasjoner kommer til live gjennom kode. Jeg har nylig fullført en bachelorgrad i datateknologi ved Universitetet i Bergen. Det har gitt meg et solid fundament for å videreutvikle meg innen programmering.",
     "projects": [
         {
+            "header": "Focus Director",
+            "techstack": "TypeScript | HTML | CSS | SASS | React | Next.js | ASP.NET Core | Entity Framework core | CosmosDB ",
+            "text": ["Fullstack application for structuring workflow."], 
+            "images": ["FocusDirector_image1.png"]
+        },
+        {
             "header": "Music Space",
             "techstack": "JavaScript | HTML | CSS | React | ASP.NET Core | Azure | CosmosDB | Three.js",
             "text": ["This is a personal website i created as a means of learing web-development technologies.", 
