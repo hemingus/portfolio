@@ -7,7 +7,9 @@
             "header": "Focus Director",
             "techstack": "TypeScript | HTML | CSS | SASS | React | Next.js | ASP.NET Core | Entity Framework core | CosmosDB ",
             "text": ["Fullstack application for structuring workflow."], 
-            "images": ["FocusDirector_image1.png"]
+            "images": ["Focus_Director_image3.png",
+            "Focus_Director_image1.png",
+            "Focus_Director_image2.png"]
         },
         {
             "header": "Music Space",
