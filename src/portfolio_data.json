@@ -14,7 +14,7 @@
         {
             "header": "Music Space",
             "techstack": "JavaScript | HTML | CSS | React | ASP.NET Core | Azure | CosmosDB | Three.js",
-            "text": ["This is a personal website i created as a means of learing web-development technologies.", 
+            "text": ["This is a personal website i created as a means of learning web-development technologies.", 
             "React on the frontend.", 
             "ASP.NET Core and CosmosDB on the backend.", 
             "Using Azure web services to host the application, REST API and database."],
