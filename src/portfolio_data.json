@@ -6,7 +6,11 @@
         {
             "header": "Focus Director",
             "techstack": "TypeScript | HTML | CSS | SASS | React | Next.js | ASP.NET Core | Entity Framework core | CosmosDB ",
-            "text": ["Fullstack application for structuring workflow."], 
+            "text": ["Fullstack application for structuring workflow.",
+            "Define tasks and break them down into subtasks and steps.",
+            "Easy to set up and edit.",
+            "Activate <Focus mode> to guide your progression,",
+            "and let you focus on one thing at a time."],
             "images": ["Focus_Director_image3.png",
             "Focus_Director_image1.png",
             "Focus_Director_image2.png"]
