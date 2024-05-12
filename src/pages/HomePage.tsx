@@ -3,11 +3,21 @@ import './HomePage.css'
 
 
 const HomePage = () => {
-    const onButtonClick = () => {
+    const onCVengClick = () => {
         const pdfUrl = "/CVeng_Heming Hanevik.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
         link.download = "CVeng_Heming Hanevik.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
+    const onCVnorClick = () => {
+        const pdfUrl = "/CV_Heming Hanevik.pdf";
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "CV_Heming Hanevik.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -24,10 +34,13 @@ const HomePage = () => {
                 and a fresh degree in <span className="text-2rem">data technology</span>,<br/>
                 I am looking for work as a frontend developer.
             </p>
-            <div>
-                <label>Get my CV:</label>
-                <button onClick={onButtonClick}>
-                        Download PDF
+            <div className="flex-column">
+                <label style={{alignSelf: "center"}}>Get my CV:</label>
+                <button onClick={onCVnorClick}>
+                        Download PDF (nor)
+                </button> 
+                <button onClick={onCVengClick}>
+                        Download PDF (eng)
                 </button> 
             </div>
             <h3 className="grid-item-2">Check out my projects, or read more about me</h3>
