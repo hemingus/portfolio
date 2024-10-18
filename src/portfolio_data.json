@@ -5,13 +5,12 @@
     "projects": [
         {
             "header": "Syntax Sprout",
-            "techstack": "TypeScript | HTML | CSS | React | Tailwind | SVG",
+            "techstack": "TypeScript | HTML | CSS | React | Tailwind | SVG | AWS Amplify",
             "text": ["Syntax tree building tool for linquistic analyzes",
             "Lets the user generate a syntax tree from a sentence or compound.",
             "Easy, fast and intuitive."],
-            "images": ["syntaxsprout_image3.png",
-            "syntaxsprout_image1.png",
-            "syntaxsprout_image2.png"]
+            "images": ["syntaxsprout_picture.png"],
+            "iframe": "https://www.syntaxsprout.com"
         },
         {
             "header": "Focus Director",
