@@ -20,6 +20,8 @@ const ContactForm: React.FC = () => {
         message: ''
     })
 
+    const [handlingSubmisson, setHandlingSubmisson] = useState(false)
+
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target
         setFormData(prevState => ({
@@ -29,14 +31,18 @@ const ContactForm: React.FC = () => {
     }
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+        setHandlingSubmisson(true)
         e.preventDefault()
         emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, e.currentTarget, EMAILJS_PUBLIC_KEY)
         .then((result) => {
             console.log(result.text)
             alert("Email sent successfully!")
+            setFormData({name: "", email: "", message: ""})
+            setHandlingSubmisson(false)
         }, (error) => {
             console.log("Error: Sending failed", error.text)
             alert("Error: Sending failed.")
+            setHandlingSubmisson(false)
         })
         console.log(formData)
     }
@@ -71,7 +77,11 @@ const ContactForm: React.FC = () => {
                     onChange={handleChange}
                     />
                 
+                {
+                handlingSubmisson ? 
+                <button>Submit</button> :
                 <button type="submit">Submit</button>
+                }
             </form>
         </div>
     )
