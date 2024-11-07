@@ -79,7 +79,7 @@ const ContactForm: React.FC = () => {
                 
                 {
                 handlingSubmisson ? 
-                <button>Submit</button> :
+                <button style={{opacity: 0.2, cursor: "none"}}>Submit</button> :
                 <button type="submit">Submit</button>
                 }
             </form>
