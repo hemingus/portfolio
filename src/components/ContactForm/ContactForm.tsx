@@ -22,6 +22,11 @@ const ContactForm: React.FC = () => {
 
     const [handlingSubmisson, setHandlingSubmisson] = useState(false)
 
+    const isFormValid = 
+        formData.name.trim() !== "" 
+        && formData.email.trim() !== "" 
+        && formData.message.trim() !== ""
+
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target
         setFormData(prevState => ({
@@ -31,8 +36,11 @@ const ContactForm: React.FC = () => {
     }
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-        setHandlingSubmisson(true)
         e.preventDefault()
+        if (!isFormValid) return
+
+        setHandlingSubmisson(true)
+
         emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, e.currentTarget, EMAILJS_PUBLIC_KEY)
         .then((result) => {
             console.log(result.text)
@@ -51,7 +59,7 @@ const ContactForm: React.FC = () => {
         <div className="form-container">
             <form onSubmit={handleSubmit}>
                 <label>
-                    Name:
+                    Your name:
                     <input
                     type="text"
                     name="name"
@@ -60,7 +68,7 @@ const ContactForm: React.FC = () => {
                     />
                 </label>
                 <label>
-                    Email:
+                    Your e-mail:
                     <input
                     type="email"
                     name="email"
@@ -69,19 +77,20 @@ const ContactForm: React.FC = () => {
                     />
                 </label>
                 <label>
-                    Message:
+                    Your message:
                 </label>
                     <textarea
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
                     />
-                
-                {
-                handlingSubmisson ? 
-                <button style={{opacity: 0.2, cursor: "none"}}>Submit</button> :
-                <button type="submit">Submit</button>
-                }
+                <button 
+                    type="submit" 
+                    disabled={handlingSubmisson} 
+                    style={{opacity: handlingSubmisson ? 0.5 : 1, cursor: handlingSubmisson ? "not-allowed" : "pointer"}}
+                >
+                    {handlingSubmisson ? "Sending..." : "Send"}
+                </button>
             </form>
         </div>
     )
