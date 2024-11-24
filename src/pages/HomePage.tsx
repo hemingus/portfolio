@@ -26,7 +26,7 @@ const HomePage = () => {
     return (
         <div className="HomePage-container">
             <h1 className="grid-item-full">Heming Hanevik</h1>
-            <h2 className="grid-item-full">&lt;Frontend Developer /&gt;</h2>
+            <h2 className="grid-item-full">&lt;Fullstack Developer /&gt;</h2>
             <div className="portrait-box"></div>
             <p className="grid-item-2">
                 <span className="text-3rem"> Hi,  I'm Heming</span><br/>
