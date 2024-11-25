@@ -26,13 +26,13 @@ const HomePage = () => {
     return (
         <div className="HomePage-container">
             <h1 className="grid-item-full">Heming Hanevik</h1>
-            <h2 className="grid-item-full">&lt;Fullstack Developer /&gt;</h2>
+            <h2 className="grid-item-full">Fullstack Developer</h2>
             <div className="portrait-box"></div>
             <p className="grid-item-2">
                 <span className="text-3rem"> Hi,  I'm Heming</span><br/>
                 With an interest for <span className="text-2rem">functionality and design</span>,<br/>
                 and a fresh degree in <span className="text-2rem">data technology</span>,<br/>
-                I am looking for work as a frontend developer.
+                I am looking for work as a frontend, backend or fullstack developer.
             </p>
             <div className="flex-column">
                 <label style={{alignSelf: "center"}}>Get my CV:</label>
