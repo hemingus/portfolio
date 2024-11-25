@@ -49,6 +49,7 @@ const ContactForm: React.FC = () => {
             setHandlingSubmisson(false)
         }, (error) => {
             alert("Error: Sending failed...")
+            console.log(error)
             setHandlingSubmisson(false)
         })
         console.log(formData)
