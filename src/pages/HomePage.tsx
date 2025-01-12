@@ -4,20 +4,20 @@ import './HomePage.css'
 
 const HomePage = () => {
     const onCVengClick = () => {
-        const pdfUrl = "/CVeng_Heming Hanevik.pdf";
+        const pdfUrl = "/CVeng_HemingHanevik.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
-        link.download = "CVeng_Heming Hanevik.pdf";
+        link.download = "CVeng_HemingHanevik.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
     }
 
     const onCVnorClick = () => {
-        const pdfUrl = "/CVnor_Heming Hanevik.pdf";
+        const pdfUrl = "/CVnor_HemingHanevik.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
-        link.download = "CVnor_Heming Hanevik.pdf";
+        link.download = "CVnor_HemingHanevik.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
