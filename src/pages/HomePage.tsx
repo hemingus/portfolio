@@ -14,10 +14,10 @@ const HomePage = () => {
     }
 
     const onCVnorClick = () => {
-        const pdfUrl = "/CVnor_HemingHanevik.pdf";
+        const pdfUrl = "/CV_nor_HemingHanevik.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
-        link.download = "CVnor_HemingHanevik.pdf";
+        link.download = "CV_nor_HemingHanevik.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
