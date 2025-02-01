@@ -37,16 +37,30 @@
     justify-self: center;
 }
 
+.GalleryText {
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    background: linear-gradient(black -200%, grey);
+    padding: 10px;
+    justify-self: center;
+    margin: auto;
+    color: lightblue;
+    font-family: "Arial";
+    font-weight: 800;
+}
+
 .GalleryCenterpiece p {
     font-size: 1rem;
     text-align: center;
     display: block;
-    background: linear-gradient(black -200%, lightblue);
+    background: linear-gradient(black -200%, darkblue);
     padding: 10px;
     justify-self: center;
     margin: auto;
-    color: black;
-    font-weight: 600;
+    color: lightblue;
+    font-family: "Arial";
+    font-weight: 800;
 }
 
 .GalleryCenterpiece h2 {

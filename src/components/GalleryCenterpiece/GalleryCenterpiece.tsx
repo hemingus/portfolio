@@ -13,7 +13,7 @@ const GalleryCenterpiece: React.FC<GalleryCenterpieceProps> = ({content}) => {
 
     function DisplayText(): JSX.Element {
         return (
-            <div>
+            <div className="GalleryText">
                 {content.text.map((text)=>(
                 <p key={text}>{text}</p>
                 ))}
