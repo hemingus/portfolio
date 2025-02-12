@@ -38,29 +38,24 @@
 }
 
 .GalleryText {
-    font-size: 1rem;
-    text-align: center;
     display: block;
     background: linear-gradient(black -200%, grey);
-    padding: 10px;
+    padding: 5px;
     justify-self: center;
     margin: auto;
-    color: lightblue;
-    font-family: "Arial";
-    font-weight: 800;
 }
 
 .GalleryCenterpiece p {
     font-size: 1rem;
     text-align: center;
     display: block;
-    background: linear-gradient(black -200%, darkblue);
+    background: linear-gradient(black -200%, rgb(50, 50, 50));
     padding: 10px;
     justify-self: center;
     margin: auto;
-    color: lightblue;
+    color: white;
     font-family: "Arial";
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .GalleryCenterpiece h2 {
@@ -71,4 +66,8 @@
 .GalleryCenterpiece h3 {
     font-size: 14px;
     color: silver;
+}
+
+.GalleryCenterpiece h4 {
+    color: lightblue;
 }
