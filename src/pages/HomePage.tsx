@@ -35,7 +35,7 @@ const HomePage = () => {
                 I am looking for work as a frontend, backend or fullstack developer.
             </p>
             <div className="flex-column">
-                <label style={{alignSelf: "center"}}>Get my CV:</label>
+                <label>Get my CV:</label>
                 <button onClick={onCVnorClick}>
                         Download PDF (nor)
                 </button> 

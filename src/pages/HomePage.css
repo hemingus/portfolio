@@ -6,6 +6,10 @@
     gap: 50px;
 }
 
+.HomePage-container * {
+    max-width: 90%;
+}
+
 .portrait-box {
     background: url("../assets/images/heming_coder.png");
     background-size: cover;
@@ -26,8 +30,6 @@
     0% {transform: translate(50%) scale(100%) perspective(1000px) rotateY(90deg); opacity: 0;}
     100% {transform: translate(-50%) scale(100%) perspective(1000px) rotateY(20deg); opacity: 1;}
 }
-
-
 
 .portrait-box::before {
     content: '';
@@ -117,6 +119,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    justify-self: center;
     gap: 10vw;
 }
 
@@ -139,6 +142,17 @@
     border-radius: 50%;
 }
 
+.flex-column {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.grid-item-2 {
+    justify-self: center;
+}
+
 @media (min-width: 600px) {
     .HomePage-container {
         position: relative;
@@ -151,6 +165,7 @@
         align-items: center;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     .link-container {
         grid-column: span 2;
         grid-column-start: 2;
@@ -161,16 +176,10 @@
         grid-column-start: 2;
         grid-column-end: 4;
     }
+
     .grid-item-full {
         grid-column: span 3;
         white-space: pre-line;
-    }
-    .flex-column {
-        display: flex;
-        justify-content: left;
-        flex-direction: column;
-        align-items: left;
-        text-align: left;
     }
 }
 
