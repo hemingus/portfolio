@@ -5,6 +5,7 @@ import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
+import ProjectDetailsPage from './pages/ProjectDetailsPage'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="/projects" element={<ProjectsPage/>} />
+          <Route path="/projects/:projectName" element={<ProjectDetailsPage/>}/>
           <Route path="/about" element={<AboutPage/>} />
           <Route path="/contact" element={<ContactPage/>} />
         </Routes>

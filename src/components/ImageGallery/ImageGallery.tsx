@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react'
 import './ImageGallery.css'
 import ImageCard from '../ImageCard/ImageCard'
 import GalleryCenterpiece from '../GalleryCenterpiece/GalleryCenterpiece'
+import ProjectDetailsPage from '../../pages/ProjectDetailsPage'
+import { Link, useNavigate } from 'react-router-dom'
 
 interface ImageGalleryProps { 
     entries: { header: string, techstack: string, text: string[], images: string[], iframe?: string }[]
@@ -10,20 +12,17 @@ interface ImageGalleryProps {
 
 const ImageGallery: React.FC<ImageGalleryProps> = ({entries}) => {
     const [items, setItems] = useState(entries)
-    const [itemSelected, setItemSelected] = useState(false)
-    const [selectedItem, setSelectedItem] = useState({"header": "", "techstack": "", "text": [""], "images": [""]})
+    
+    const navigate = useNavigate()
 
     useEffect(() => {
         setItems(entries)
     },[entries])
     
     function handleItemClick(item: { header: string, techstack: string, text: string[]; images: string[], iframe?: string }) {
-        setSelectedItem(item);
-        setItemSelected(true);
-      }
-    
-    function setGalleryView() : JSX.Element {
-        if (!itemSelected) {
+        navigate(`/projects/${item.header.toLowerCase().replace(/\s+/g, "-")}`)
+    }
+
             return (
                 <div className="image-gallery-container">
                     <ul>
@@ -35,20 +34,6 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({entries}) => {
                 </div>
 
             )
-        } else {
-            return (
-                <div onClick={() => {setItemSelected(false)}}>
-                    <GalleryCenterpiece key={selectedItem.header} content={selectedItem} />
-                </div>
-            )
-        }
-    }
-
-    return (
-        <div>
-            {setGalleryView()}
-        </div>
-    )
 }
 
 export default ImageGallery
