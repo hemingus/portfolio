@@ -2,8 +2,9 @@
   min-width: 100svw;
   min-height: 100lvh;
   text-align: center;
-  background: url("./assets/images/tech_globe.png");
+  background: radial-gradient(circle at 100% 0%, rgb(20, 20, 120), black, rgb(0, 10, 30));
   color: white;
+  transform: logo-spin 1s linear;
 }
 
 body {
@@ -11,50 +12,12 @@ body {
   overflow-x: hidden;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #00a2ff;
-}
-
 .App-container {
-  display: grid;
-  grid: column;
-  justify-content: center;
-  flex: wrap;
-}
+    display: grid;
+  }
 
 .App-container h1 {
+  font-size: 2.5rem;
   border-radius: 50%;
   padding: 10px;
   box-shadow: 0 0 20px rgb(90, 208, 255);
@@ -67,17 +30,12 @@ body {
 }
 
 .App-container h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   display: block;
   background: linear-gradient(rgb(0, 119, 255) 0%, rgb(1, 0, 78) 50%, black);
   position: relative;
-  border-style:silver;
   left: 50%;
   transform: translate(-50%);
-}
-
-.App-container p {
-  font-size: 1rem;
 }
 
 .App-container button {
@@ -88,4 +46,33 @@ body {
 .App-container button:hover {
   color: white;
   box-shadow: 0 0 10px white;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;           
+}
+
+::-webkit-scrollbar-track {
+  background: #666666;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top right, darkblue, grey);
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to top right, blue, white);
+}
+
+@media (min-width: 1024px) {
+  .App-container h1 {
+    font-size: 3.5rem;
+  }
+  .App-container h2 {
+    font-size: 2rem;
+  }
 }
