@@ -7,17 +7,8 @@ interface ImageCarouselProps {
 }
 
 const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, path }) => {
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth)  
     const [index, setIndex] = useState(0)
     const [isPlaying, setIsPlaying] = useState(true)
-
-    // Update screen width on resize
-    useEffect(() => {
-        const handleResize = () => setScreenWidth(window.innerWidth)
-        window.addEventListener("resize", handleResize)
-        return () => window.removeEventListener("resize", handleResize)
-      }, [])
-    
 
     useEffect(() => {
         if (!isPlaying) return
@@ -27,19 +18,8 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, path }) => {
         return () => clearInterval(interval)
     }, [isPlaying])
 
-    // Function to calculate left position dynamically (ensures overlap)
-    const calculateLeftPosition = (i: number, total: number) => {
-        const maxSpread = screenWidth * 1 // Max spread (60% of screen width)
-        const baseSpacing = Math.min(200, maxSpread / total) // Base spacing
-        const overlapFactor = 0.5 // Controls overlap intensity (higher = more overlap)
-
-        return i * baseSpacing * overlapFactor // Dynamic left position with overlap
-    }
-
-
     return (
     <div className="carousel-container">
-
         <div className="center-image-frame">
             <img 
             key={index}
@@ -53,9 +33,6 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, path }) => {
                 {isPlaying ?  "⏸️" : "▶️"}
             </button>
         </div>
-
-
-
         <div className="carousel-image-container">
             {images.map((image, i) => <img 
             className="carousel-image"
@@ -71,9 +48,6 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, path }) => {
             onClick={() => setIndex(i)}
             />)}
         </div>
-
-
-
     </div>
     );
 };

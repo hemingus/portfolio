@@ -2,9 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import './ImageGallery.css'
 import ImageCard from '../ImageCard/ImageCard'
-import GalleryCenterpiece from '../GalleryCenterpiece/GalleryCenterpiece'
-import ProjectDetailsPage from '../../pages/ProjectDetailsPage'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 interface ImageGalleryProps { 
     entries: { header: string, techstack: string, text: string[], images: string[], iframe?: string }[]
