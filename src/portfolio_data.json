@@ -9,7 +9,11 @@
             "text": ["Syntax tree building tool for linquistic analyzes",
             "Lets the user generate a syntax tree from a sentence or compound.",
             "Easy, fast and intuitive."],
-            "images": ["syntaxsprout_picture.png"],
+            "images": ["syntaxsprout_picture.png", 
+            "action_generateParent.gif",
+            "action_mergeLines.gif",
+            "action_putArrow.gif",
+            "action_setTextColor.gif"],
             "iframe": "https://www.syntaxsprout.com"
         },
         {
