@@ -1,3 +1,7 @@
+.projectContainer {
+    background: url("../assets/images/tech_globe.png");
+}
+
 .projectDetailsContainer {
     display: flex;
     flex-direction: column;

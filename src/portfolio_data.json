@@ -14,7 +14,7 @@
             "action_mergeLines.gif",
             "action_putArrow.gif",
             "action_setTextColor.gif"],
-            "iframe": "https://www.syntaxsprout.com"
+            "url": "https://www.syntaxsprout.com"
         },
         {
             "header": "Focus Director",
@@ -36,7 +36,7 @@
             "ASP.NET Core and CosmosDB on the backend.", 
             "Using Azure web services to host the application, REST API and database."],
             "images": ["musicspace_image1.png"],
-            "iframe": "https://hemingmusic.azurewebsites.net"
+            "url": "https://hemingmusic.azurewebsites.net"
         },
         {
             "header": "Hold'em Poker",

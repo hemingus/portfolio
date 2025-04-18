@@ -15,21 +15,21 @@ const ProjectDetailsPage = () => {
     }
   
     return (
-        <>
-        <h1>{project.header}</h1>
-        <div className="projectDetailsContainer">
-            
-            <div className="projectDetails-text">
-                <p className="projectDetails-tech">{project.techstack}</p>
-                {project.text.map((text)=>(
-                    <p key={text}>{text}</p>
-                ))}
+        <div className="projectContainer">
+            <h1>{project.header}</h1>
+            <div className="projectDetailsContainer">
+                
+                <div className="projectDetails-text">
+                    <p className="projectDetails-tech">{project.techstack}</p>
+                    {project.text.map((text)=>(
+                        <p key={text}>{text}</p>
+                    ))}
+                </div>
+                <section className="projectDetails-images">
+                    <ImageCarousel images={project.images} path={path}/>
+                </section>
             </div>
-            <section className="projectDetails-images">
-                <ImageCarousel images={project.images} path={path}/>
-            </section>
         </div>
-        </>
     );
 
 }

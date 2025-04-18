@@ -26,7 +26,6 @@ const HomePage = () => {
     return (
         <div className="HomePage-container">
             <h1 className="grid-item-full">Heming Hanevik</h1>
-            <h2 className="grid-item-full">Fullstack Developer</h2>
             <div className="portrait-box"></div>
             <p className="grid-item-2">
                 <span className="text-3rem"> Hi,  I'm Heming</span><br/>
@@ -34,6 +33,12 @@ const HomePage = () => {
                 and a fresh degree in <span className="text-2rem">data technology</span>,<br/>
                 I am looking for work as a frontend, backend or fullstack developer.
             </p>
+
+            <div className="link-container">
+                <Link className="link-button" to="/about">About</Link>
+                <Link className="link-button" to="/projects">Projects</Link>  
+            </div>
+
             <div className="flex-column">
                 <label>Get my CV:</label>
                 <button onClick={onCVnorClick}>
@@ -43,15 +48,11 @@ const HomePage = () => {
                         Download PDF (eng)
                 </button> 
             </div>
-            <h3 className="grid-item-2">Check out my projects, or read more about me</h3>
-            <div className="link-container">
-                <Link className="link-button" to="/projects">Projects</Link>
-                <Link className="link-button" to="/about">About</Link>
-            </div>
 
             <div className="footer-container">
                 <a href="https://www.linkedin.com/in/heming-hanevik-395220129/" target="_blank">LinkedIn</a>
                 <a href="https://github.com/hemingus" target="_blank">GitHub</a>
+                <h3>@ Heming Hanevik Portfolio</h3>
             </div>
         </div>
     )
