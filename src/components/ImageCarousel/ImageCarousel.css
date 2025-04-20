@@ -1,6 +1,6 @@
 .carousel-container {
     position: relative;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -12,8 +12,9 @@
     position: relative;
     display: flex;
     justify-content: start;
+    gap: 8px;
     height: 100px;
-    width: 100%;
+    max-width: 450px;
     background: linear-gradient(to top, black 50%, transparent 100%);
     border-radius: 10px;
     overflow: auto;
@@ -61,7 +62,7 @@
     justify-self: center;
     align-self: center;
     max-height: 100%;
-    max-width: min(100%, 480px);
+    max-width: min(100%, 450px);
     height: auto;
     width: auto;
     z-index: 10;
@@ -82,9 +83,6 @@
 }
 
 @media (min-width: 1024px) {
-    .carousel-container { 
-        width: 100%;
-    }
     .center-image-frame {
         height: 600px;
     }
