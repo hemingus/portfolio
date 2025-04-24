@@ -24,6 +24,7 @@ const ProjectDetailsPage = () => {
                     {project.text.map((text)=>(
                         <p key={text}>{text}</p>
                     ))}
+                    {project.url ? <a href={project.url} target="_blank">{`Visit ${project.header}`}</a> : <></>}
                 </div>
                 <section className="projectDetails-images">
                     <ImageCarousel images={project.images} path={path}/>

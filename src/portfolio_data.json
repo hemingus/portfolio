@@ -35,8 +35,7 @@
             "React on the frontend.", 
             "ASP.NET Core and CosmosDB on the backend.", 
             "Using Azure web services to host the application, REST API and database."],
-            "images": ["musicspace_image1.png"],
-            "url": "https://hemingmusic.azurewebsites.net"
+            "images": ["musicspace_image1.png"]
         },
         {
             "header": "Hold'em Poker",
