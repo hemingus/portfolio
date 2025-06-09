@@ -15,6 +15,7 @@
   }
   
   .form-container label {
+    font-size: 1.3rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -23,10 +24,15 @@
 
   .form-container input,
   .form-container textarea {
+    background: rgb(50, 50, 50);
+    color: white;
+    font-family: arial;
+    font-size: 1.2rem;
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    height: auto;
   }
   
   .form-container button {
