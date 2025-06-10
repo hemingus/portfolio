@@ -2,7 +2,7 @@
 .form-container {
     display: flex;
     justify-content: center;
-    width: min(600px, 100svw);
+    width: min(600px, 90svw);
     margin: auto;
     padding: 20px;
     border-radius: 8px;
