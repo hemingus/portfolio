@@ -48,7 +48,6 @@ const HomePage = () => {
                         Download PDF (eng)
                 </button> 
             </div>
-
             <div className="footer-container">
                 <a href="https://www.linkedin.com/in/heming-hanevik-395220129/" target="_blank">LinkedIn</a>
                 <a href="https://github.com/hemingus" target="_blank">GitHub</a>
